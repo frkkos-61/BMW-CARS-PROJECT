@@ -1,0 +1,15 @@
+@import "./modules";
+
+#interior {
+  @extend %design;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), black), url("../images/bmw-banner.jpeg");
+  //! ./ mevcut dizini temsil eder ../ bir üst dizini ifade eder.
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    @include mobile {
+      font-size: 20px;
+    }
+    
+  }
+}

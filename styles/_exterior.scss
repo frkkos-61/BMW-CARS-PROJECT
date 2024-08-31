@@ -1,0 +1,25 @@
+@import "./modules";
+@import "./mediaquaries";
+
+#exterior {
+  @extend %design;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black);
+  @include mobile {
+    gap: 40px;
+  }
+  @include laptop {
+    gap: 50px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+  h1 {
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}
